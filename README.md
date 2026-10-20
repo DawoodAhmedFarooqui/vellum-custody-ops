@@ -6,6 +6,10 @@ custodian file import. Built for the Chartered Investment coding challenge; the 
 
 **Stack:** Node.js 22 + Express 5 · React 19 + MUI (DataGrid) + React Router + TanStack Query · MySQL 8.4 · Docker Compose.
 
+**Technical overview with diagrams:** [docs/architecture.html](docs/architecture.html) (open it in a browser) covers the
+architecture, data model, grid URL state, optimistic locking, the invoice state machine and fee pipeline, the import
+pipeline, and the role matrix.
+
 ## Run it
 
 ```bash
