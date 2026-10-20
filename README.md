@@ -40,8 +40,9 @@ npm test --prefix server     # unit tests for fee calculation and import parsing
 
 Everything in the **Must** and **Should** lists of the brief:
 
-- **Sign-in and roles.** Email + password (bcrypt hashes), session in an `HttpOnly`/`SameSite=Strict` cookie (JWT, 10 h).
-  Permissions are enforced on the server per route (`server/src/lib/auth.js`); the UI only hides what the role can't do.
+- **Sign-in and roles.** Email + password (bcrypt hashes), session in an `HttpOnly`/`SameSite=Strict` cookie (JWT, 10 h),
+  five failed attempts lock that address + email for five minutes. Permissions are enforced on the server per route
+  (`server/src/lib/auth.js`); the UI only hides what the role can't do.
 - **Clients grid.** Server-side paging, sorting, filters (type, country, KYC, relationship manager) and name/ID search.
   The whole grid state lives in the URL, so a copied link reopens the same view (e.g. `/clients?type=INSTITUTIONAL&country=DE&sort=name&dir=desc&page=1`).
 - **Client detail** with tabs at their own URLs: Overview (editable; RM picked from users), Portfolios, Transactions, Invoices, Audit log.
@@ -93,6 +94,33 @@ reused a reference. Rows with duplicate references inside one file are accepted 
 a marker row taken `FOR UPDATE`, so several instances can start at once. Loading is done in a single transaction with batched
 inserts.
 
+## Assumptions and judgement calls
+
+Where the brief left room, this is what I chose, and why:
+
+| Decision | Reason |
+| --- | --- |
+| Only completed months can be invoiced | Transactions may still settle in a running month; an early invoice would be wrong by construction. |
+| Issuing refuses a draft whose amounts no longer match the data | Issued invoices are immutable, so they must be right at the moment of issue. Recalculate, then issue. |
+| Voiding needs a reason | A void is an exception that ops and auditors will ask about later. |
+| Import trims stray whitespace but rejects everything else (`usd`, `EURO`, `KAUF`, ISO dates, `1,234.56`) | Whitespace is unambiguous; the rest may be a different meaning. The brief wants problems fixed at the source. |
+| A `Referenz` already known with *different* data is an error, not a duplicate | The custodian reused a reference; silently skipping would hide a real problem. Same reference + same data is a benign re-upload. |
+| Rows for a `CLOSED` portfolio are rejected | A closed portfolio should not receive new business; ops can reopen it or query the custodian. |
+| Imported transactions continue the `T-` id sequence | Keeps one id scheme across loaded and imported data. |
+| Account fee applies when the client has ≥ 1 `ACTIVE` portfolio at generation time | Literal reading of the rule; there is no portfolio history in the data. |
+
+## How it was verified
+
+- `npm test --prefix server`: 16 unit tests for the fee maths (rounding, clamps, FX, reconciliation) and the import parser/validator
+  (German numbers and dates, ISIN check digit, every error category in the sample file, re-upload detection).
+- Every API route exercised with curl as viewer, operator and admin, including malformed input (bad enums, dates, ids, paging), and
+  race conditions run in parallel: two edits of the same client, approve vs cancel of the same transaction, three simultaneous
+  invoice generations, two simultaneous uploads of the same file. Each produced exactly one winner and clean 409s.
+- A SQL check over all generated invoices: total = Σ lines = Σ per-transaction fees + account fee, every fee within 15–250 EUR.
+- A scripted browser walkthrough (Playwright on Chrome) of the whole UI, run against the Docker build from a wiped database: deep
+  link → login → same view, filters, conflict dialog, invoice lifecycle, bulk approve, import, viewer restrictions.
+- `docker compose down -v && docker compose up --build` from scratch: 50,000 transactions loaded in about 10 seconds.
+
 ## Project layout
 
 ```
@@ -137,16 +165,43 @@ Grid routes take `page`, `pageSize`, `sort`, `dir` and the filters shown in the 
 
 Clearly marked rather than rushed:
 
-- **Tests** cover the two pure modules (fee maths, import parsing/validation). The routes were verified by hand with curl
-  and a scripted browser walkthrough; there are no automated API or UI tests in the repo.
-- **Sessions** are stateless JWTs: there is no server-side revocation or refresh. The login brute-force brake is in-memory
-  (per process). `JWT_SECRET` in `docker-compose.yml` is a placeholder for local use.
-- **Audit log** is per client and capped at the latest 1,000 entries; there is no global audit screen.
-- **Invoices** have no PDF/print layout and no invoice-level search on the global list beyond status.
-- **Portfolios and users** are read-only (no screens to manage them); instruments and FX rates are only loaded.
+- **Automated tests** cover the two pure modules (fee maths, import parsing/validation). The routes and UI were verified as
+  described above, but those checks are scripts I ran, not tests in the repo.
+- **Audit log** is per client and capped at the latest 1,000 entries; there is no global audit screen or filtering.
+- **Invoices** have no PDF/print layout; the global invoice list filters by status only.
+- **Portfolios and users** are read-only (no screens to manage them); instruments and FX rates are only loaded, never updated.
 - The client's Invoices tab lists up to 200 invoices without paging (enough for 9 months of data).
 - The client bundle is a single chunk (~340 kB gzipped); no code splitting.
 
+## Production readiness: what this is and isn't
+
+This is a working first version with the right foundations (hashed passwords, server-side authorisation, decimal money,
+database-enforced invariants, transactions and row locks around every multi-step write, audit trail). It is **not** yet
+something I would put in front of real clients' data. What I would do next, in order:
+
+1. **Secrets and transport.** `JWT_SECRET` and database credentials come from the environment, but `docker-compose.yml`
+   ships placeholders. Real deployment needs a secret store, TLS termination (then `COOKIE_SECURE=true`), and security headers
+   (CSP, HSTS).
+2. **Sessions.** Stateless JWTs can't be revoked. Move to server-side sessions (or a token denylist) with idle timeout, and
+   add password change / reset and ideally MFA for admins. The login brake is in-memory per process; it needs a shared store
+   (Redis) once there is more than one instance.
+3. **Schema migrations.** The schema is applied idempotently on start, which is fine for v1 but not for evolving a live
+   database. Introduce versioned migrations (e.g. Knex or Flyway) and run them as a deploy step, not at app start.
+4. **Test automation and CI.** API integration tests against a throwaway MySQL (testcontainers), Playwright end-to-end tests
+   for the critical flows, and a CI pipeline that runs lint, unit, integration and the Docker build on every push.
+5. **Observability.** Structured JSON logs with request ids, metrics (request latency, DB pool usage, import/invoice counts),
+   error tracking, and separate liveness/readiness probes (readiness should fail while seeding).
+6. **Operations.** Database backups and restore drill, non-root containers, image vulnerability scanning, resource limits,
+   graceful shutdown (finish in-flight requests, close the pool). Keep uploaded import files (object storage) so an import can
+   be reprocessed or audited later.
+7. **Scale.** Current data (2k clients, 50k transactions) is small for MySQL; the indexed queries will hold up to millions of rows.
+   Beyond that: keyset pagination instead of `OFFSET` for very deep pages, cached counts, and a read replica for exports.
+8. **Product.** Invoice PDF and email, global audit screen, user and portfolio management, FX rate ingestion, scheduled
+   month-end invoicing for all clients with an approval queue.
+
 ## AI assistance
 
-The app was built with Claude Code (Anthropic). The complete, unedited conversation is in [`ai-transcript/`](ai-transcript/).
+The app was built with Claude Code (Anthropic). The complete, unedited conversation history is in
+[`ai-transcript/`](ai-transcript/): the raw Claude Code session logs, a readable Markdown rendering of each
+session, the script that produced it, and a reading guide that walks through what happened in order, including
+the parts that did not go to plan.

@@ -64,7 +64,7 @@ export function TransactionsGrid({ clientId, height }) {
   }
   const hasFilters = Object.values(filters).some((v) => (Array.isArray(v) ? v.length : v))
   const fixed = clientId ? { clientId } : {}
-  const { rows, total, isFetching, query } = useServerRows({ url: '/api/transactions', urlState, filters, fixed, defaultSort: DEFAULT_SORT })
+  const { rows, total, isFetching, query, error } = useServerRows({ url: '/api/transactions', urlState, filters, fixed, defaultSort: DEFAULT_SORT })
 
   const bulk = useMutation({
     mutationFn: ({ action, ids }) => api.post('/api/transactions/bulk-status', { action, ids }),
@@ -117,6 +117,7 @@ export function TransactionsGrid({ clientId, height }) {
         </Button>
       </Stack>
 
+      <ErrorAlert error={error} sx={{ mb: 1 }} />
       <ServerGrid rows={rows} total={total} loading={isFetching} urlState={urlState} defaultSort={DEFAULT_SORT}
         columns={makeColumns({ withClient: !clientId })} height={height}
         checkboxSelection={can('transaction:status')}

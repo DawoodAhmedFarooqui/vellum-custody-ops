@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import { StatusChip } from '../components/common.jsx'
+import { ErrorAlert, StatusChip } from '../components/common.jsx'
 import { FilterBar, MultiSelect, SearchField } from '../components/filters.jsx'
 import { ServerGrid, useServerRows } from '../components/ServerGrid.jsx'
 import { titleCase } from '../format.js'
@@ -29,7 +29,7 @@ export default function ClientsPage() {
     kycStatus: urlState.getList('kycStatus'), rm: urlState.getList('rm'),
   }
   const hasFilters = Object.values(filters).some((v) => (Array.isArray(v) ? v.length : v))
-  const { rows, total, isFetching } = useServerRows({ url: '/api/clients', urlState, filters, defaultSort: DEFAULT_SORT })
+  const { rows, total, isFetching, error } = useServerRows({ url: '/api/clients', urlState, filters, defaultSort: DEFAULT_SORT })
 
   return (
     <>
@@ -41,6 +41,7 @@ export default function ClientsPage() {
         <MultiSelect label="KYC status" value={filters.kycStatus} options={ref.kycStatuses} onChange={(v) => urlState.set({ kycStatus: v })} />
         <MultiSelect label="Relationship manager" value={filters.rm} options={ref.users.map((u) => ({ value: u.id, label: u.name }))} onChange={(v) => urlState.set({ rm: v })} width={220} />
       </FilterBar>
+      <ErrorAlert error={error} sx={{ mb: 1 }} />
       <ServerGrid rows={rows} total={total} loading={isFetching} urlState={urlState} defaultSort={DEFAULT_SORT} columns={columns}
         onRowClick={(p) => navigate(`/clients/${p.id}`)} />
     </>

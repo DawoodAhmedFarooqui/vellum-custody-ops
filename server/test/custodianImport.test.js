@@ -84,3 +84,14 @@ test('re-upload detection compares the economic content', () => {
   assert.equal(sameTransaction(tx, { ...tx, quantity: '1234.0000', price: '408.670000' }), true)
   assert.equal(sameTransaction(tx, { ...tx, price: '408.68' }), false)
 })
+
+test('line numbers stay true to the file even with a quoted newline', () => {
+  const rows = parseSemicolonCsv('a;b\r\n"multi\r\nline";1\r\nnext;2\r\n')
+  assert.deepEqual(rows.map((r) => r.line), [1, 2, 4])
+})
+
+test('rejects more decimal places than the database keeps', () => {
+  assert.match(errorsFor({ st: '0,12345' }), /more than 4 decimal places/)
+  assert.match(errorsFor({ kurs: '1,1234567' }), /more than 6 decimal places/)
+  assert.equal(validateRow(row({ st: '0,1234', kurs: '1,123456' }), ref).errors.length, 0)
+})

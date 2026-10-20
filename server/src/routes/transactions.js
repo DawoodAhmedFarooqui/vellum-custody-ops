@@ -6,7 +6,7 @@ import { pool, withTransaction } from '../db.js'
 import { audit } from '../lib/audit.js'
 import { requirePermission } from '../lib/auth.js'
 import { parse } from '../lib/errors.js'
-import { dateParam, likeContains, listParam, paging } from '../lib/listQuery.js'
+import { dateParam, intParam, likeContains, listParam, paging } from '../lib/listQuery.js'
 
 const router = Router()
 
@@ -57,7 +57,8 @@ function buildFilter(q) {
   inFilter('t.currency', listParam(q.currency))
   range('t.trade_date', q.tradeFrom, q.tradeTo, 'trade')
   range('t.settlement_date', q.settleFrom, q.settleTo, 'settle')
-  if (q.importId) { where.push('t.import_id = ?'); params.push(Number(q.importId)) }
+  const importId = intParam(q.importId, 'importId')
+  if (importId !== null) { where.push('t.import_id = ?'); params.push(importId) }
   if (q.q) {
     // Free text: exact ids/refs/ISINs, or part of the client or instrument name.
     const s = String(q.q).trim()
@@ -122,7 +123,7 @@ const TARGET = { APPROVE: 'SETTLED', CANCEL: 'CANCELLED' }
 // so a mixed selection tells the operator exactly what happened to each one.
 router.post('/bulk-status', requirePermission('transaction:status'), async (req, res) => {
   const { action, ids } = parse(BulkSchema, req.body)
-  const unique = [...new Set(ids)]
+  const unique = [...new Set(ids.map((id) => id.toUpperCase()))]
   const to = TARGET[action]
 
   const results = await withTransaction(async (conn) => {

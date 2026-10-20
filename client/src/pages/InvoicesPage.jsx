@@ -1,6 +1,6 @@
 import { Link, Typography } from '@mui/material'
 import { Link as RouterLink, useNavigate } from 'react-router-dom'
-import { StatusChip } from '../components/common.jsx'
+import { ErrorAlert, StatusChip } from '../components/common.jsx'
 import { FilterBar, MultiSelect } from '../components/filters.jsx'
 import { ServerGrid, useServerRows } from '../components/ServerGrid.jsx'
 import { fmtDateTime, fmtMoney, fmtPeriod } from '../format.js'
@@ -25,7 +25,7 @@ export default function InvoicesPage() {
   const ref = useReference()
   const navigate = useNavigate()
   const filters = { status: urlState.getList('status') }
-  const { rows, total, isFetching } = useServerRows({ url: '/api/invoices', urlState, filters, defaultSort: DEFAULT_SORT })
+  const { rows, total, isFetching, error } = useServerRows({ url: '/api/invoices', urlState, filters, defaultSort: DEFAULT_SORT })
   return (
     <>
       <Typography variant="h5" sx={{ mb: 1.5 }}>Invoices</Typography>
@@ -33,6 +33,7 @@ export default function InvoicesPage() {
         <MultiSelect label="Status" value={filters.status} options={ref.invoiceStatuses} onChange={(v) => urlState.set({ status: v })} />
         <Typography variant="body2" color="text.secondary">Invoices are generated from a client's Invoices tab.</Typography>
       </FilterBar>
+      <ErrorAlert error={error} sx={{ mb: 1 }} />
       <ServerGrid rows={rows} total={total} loading={isFetching} urlState={urlState} defaultSort={DEFAULT_SORT} columns={columns}
         onRowClick={(p) => navigate(`/invoices/${p.id}`)} />
     </>

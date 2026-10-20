@@ -4,7 +4,7 @@ import { pool, withTransaction } from '../db.js'
 import { audit, diff } from '../lib/audit.js'
 import { requirePermission } from '../lib/auth.js'
 import { badRequest, conflict, notFound, parse } from '../lib/errors.js'
-import { likeContains, listParam, paging } from '../lib/listQuery.js'
+import { intListParam, likeContains, listParam, paging } from '../lib/listQuery.js'
 
 const router = Router()
 
@@ -31,7 +31,7 @@ router.get('/', async (req, res) => {
   inFilter('c.type', listParam(q.type, ['RETAIL', 'INSTITUTIONAL']))
   inFilter('c.country', listParam(q.country))
   inFilter('c.kyc_status', listParam(q.kycStatus, ['APPROVED', 'PENDING', 'EXPIRED', 'REJECTED']))
-  inFilter('c.relationship_manager_id', listParam(q.rm).map(Number))
+  inFilter('c.relationship_manager_id', intListParam(q.rm, 'rm'))
   if (q.q) {
     // Name search; also matches an exact client id so "C-00042" finds that client.
     where.push('(c.name LIKE ? OR c.id = ?)')

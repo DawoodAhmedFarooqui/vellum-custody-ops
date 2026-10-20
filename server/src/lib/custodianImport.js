@@ -13,12 +13,15 @@ export function parseSemicolonCsv(text) {
   let field = ''
   let quoted = false
   let i = 0
+  let line = 1 // file line the current record starts on, as an editor shows it
+  let startLine = 1
   const src = text.replace(/^﻿/, '')
   while (i < src.length) {
     const ch = src[i]
     if (quoted) {
       if (ch === '"' && src[i + 1] === '"') { field += '"'; i += 2; continue }
       if (ch === '"') { quoted = false; i++; continue }
+      if (ch === '\n' || (ch === '\r' && src[i + 1] !== '\n')) line++
       field += ch
       i++
       continue
@@ -27,20 +30,20 @@ export function parseSemicolonCsv(text) {
     if (ch === ';') { row.push(field); field = ''; i++; continue }
     if (ch === '\r' || ch === '\n') {
       row.push(field)
-      rows.push(row)
+      rows.push({ line: startLine, cells: row })
       row = []
       field = ''
       i += ch === '\r' && src[i + 1] === '\n' ? 2 : 1
+      line++
+      startLine = line
       continue
     }
     field += ch
     i++
   }
-  if (field !== '' || row.length) { row.push(field); rows.push(row) }
-  // Line numbers as the user sees them in an editor (header = line 1); drop blank lines.
-  return rows
-    .map((cells, idx) => ({ line: idx + 1, cells }))
-    .filter((r) => !(r.cells.length === 1 && r.cells[0].trim() === ''))
+  if (field !== '' || row.length) { row.push(field); rows.push({ line: startLine, cells: row }) }
+  // Drop blank lines; the header is line 1.
+  return rows.filter((r) => !(r.cells.length === 1 && r.cells[0].trim() === ''))
 }
 
 // German number: "1.234,56" / "12.500" / "901" / "0,5". Thousands dots must be in groups of three.
@@ -118,9 +121,12 @@ export function validateRow(cells, ref) {
     errors.push(`Valuta ${settleRaw} is before Handelstag ${tradeRaw}`)
   }
 
+  // Stored as DECIMAL(20,4) / DECIMAL(20,6): refuse what would be rounded or overflow rather than alter it silently.
+  const fits = (d, intDigits, dp) => d.decimalPlaces() <= dp && d.abs().lt(new Decimal(10).pow(intDigits))
   const quantity = parseGermanNumber(qtyRaw)
   if (quantity === null) errors.push(`Stueck "${qtyRaw}" is not a valid positive number (e.g. 12.500 or 1.234,5)`)
   else if (quantity.lte(0)) errors.push('Stueck must be greater than 0')
+  else if (!fits(quantity, 16, 4)) errors.push('Stueck has more than 4 decimal places or is too large')
 
   let price = null
   const isTransfer = type.startsWith('TRANSFER_')
@@ -132,6 +138,7 @@ export function validateRow(cells, ref) {
       price = parseGermanNumber(priceRaw)
       if (price === null) errors.push(`Kurs "${priceRaw}" is not a valid German number (e.g. 1.234,56)`)
       else if (price.lte(0)) errors.push('Kurs must be greater than 0')
+      else if (!fits(price, 14, 6)) errors.push('Kurs has more than 6 decimal places or is too large')
     }
   }
 

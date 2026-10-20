@@ -1,5 +1,6 @@
 import cookieParser from 'cookie-parser'
 import express from 'express'
+import multer from 'multer'
 import { requireAuth } from './lib/auth.js'
 import authRouter from './routes/auth.js'
 import clientsRouter from './routes/clients.js'
@@ -13,6 +14,8 @@ const app = express()
 
 // The UI is served from the same origin (Vite proxy in dev, nginx in docker), so no CORS is needed.
 app.disable('x-powered-by')
+// nginx (docker) sits in front of the API; take the client address from X-Forwarded-For when it comes from there.
+app.set('trust proxy', 'loopback, uniquelocal')
 app.use(express.json({ limit: '1mb' }))
 app.use(cookieParser())
 
@@ -32,7 +35,7 @@ app.use((req, res) => {
 })
 
 app.use((err, req, res, next) => {
-  if (err.code === 'LIMIT_FILE_SIZE') err.status = 413
+  if (err instanceof multer.MulterError) err.status = err.code === 'LIMIT_FILE_SIZE' ? 413 : 400
   const status = err.status || err.statusCode || 500
   if (status >= 500) console.error(err)
   res.status(status).json({

@@ -26,9 +26,9 @@ export function useServerRows({ url, urlState, filters, fixed = {}, defaultSort 
 
 export function ServerGrid({ rows, total, loading, urlState, defaultSort, columns, height = 'calc(100vh - 230px)', ...rest }) {
   const page = Number(urlState.get('page')) || 0
-  const pageSize = Number(urlState.get('pageSize')) || PAGE_SIZES[1]
+  const pageSize = PAGE_SIZES.includes(Number(urlState.get('pageSize'))) ? Number(urlState.get('pageSize')) : PAGE_SIZES[1]
   const sortField = urlState.get('sort') || defaultSort.field
-  const sortDir = urlState.get('dir') || defaultSort.dir
+  const sortDir = String(urlState.get('dir') || defaultSort.dir).toLowerCase() === 'desc' ? 'desc' : 'asc'
   return (
     <div style={{ height, width: '100%' }}>
       <DataGrid
