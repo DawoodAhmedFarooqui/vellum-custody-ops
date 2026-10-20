@@ -201,7 +201,4 @@ something I would put in front of real clients' data. What I would do next, in o
 
 ## AI assistance
 
-The app was built with Claude Code (Anthropic). The complete, unedited conversation history is in
-[`ai-transcript/`](ai-transcript/): the raw Claude Code session logs, a readable Markdown rendering of each
-session, the script that produced it, and a reading guide that walks through what happened in order, including
-the parts that did not go to plan.
+The app was built with Claude Code (Anthropic).
