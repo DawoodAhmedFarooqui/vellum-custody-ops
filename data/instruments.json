@@ -1,0 +1,1802 @@
+[
+  {
+    "isin": "ZZRTJVHZUUC8",
+    "name": "Tamberg SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZTJ654K34H9",
+    "name": "Lumenstein SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZSW3VDVMX33",
+    "name": "Rheinfeld SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZVV86S1TK20",
+    "name": "Cedarline AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZSY75GVWH38",
+    "name": "Alpenrand Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZNYUN6U69P4",
+    "name": "Oakridge NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ6G7T351YS8",
+    "name": "Westmark SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDURJ8EYF79",
+    "name": "Rheinfeld 2.32% 2033",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZS5DUMTGUS2",
+    "name": "Tamberg NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1F20LZVS05",
+    "name": "Marenco Dividend Fund R",
+    "type": "FUND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZA0JDGH6BQ7",
+    "name": "Alpenrand 2.06% 2035",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDFWKNW2C60",
+    "name": "Tamberg 5.83% 2029",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ15EAK88GX0",
+    "name": "Alpenrand Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ360HZWVBZ7",
+    "name": "Rheinfeld 5.68% 2031",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZA0MC9SC362",
+    "name": "Valtamo Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZV156F6CRF5",
+    "name": "Pellucid Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZGWUC9DVM97",
+    "name": "Dunmore Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZK6GPY2RAD8",
+    "name": "Valtamo SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1JZLDQ9HG0",
+    "name": "Zinnober plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZRRR7DV7MY0",
+    "name": "Alpenrand AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZG3YRXV3CV2",
+    "name": "Solano 3.36% 2034",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ3JZLZ0R1Z3",
+    "name": "Elbtal 4.10% 2034",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZPBF2VAA5Q5",
+    "name": "Pellucid SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZX344JARVE9",
+    "name": "Solano Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZURGY384EN4",
+    "name": "Nordhalle 1.08% 2033",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ02ZCUZ4L11",
+    "name": "Brueckweg 5.80% 2031",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ8GWGBBU9H3",
+    "name": "Kestrel Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZS04WUSMW44",
+    "name": "Westmark AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZRPUXH805V1",
+    "name": "Ysselstein Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZLFNU8Y3Z43",
+    "name": "Tamberg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZS18RZJ4773",
+    "name": "Nordhalle 5.64% 2031",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZFKENA4F9U7",
+    "name": "Quayside plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZCTNZUJVHE1",
+    "name": "Granmont Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZKX4XAA5XF2",
+    "name": "Elbtal Euro Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ87G344JP18",
+    "name": "Fjordvik plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ10D6TDSNV8",
+    "name": "Valtamo SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZL7H4C2L7U4",
+    "name": "Zinnober Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZTUXGXNGS63",
+    "name": "Harbourline 4.98% 2034",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZQ9MWTV5DX7",
+    "name": "Lumenstein Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZB0QYSKN4B5",
+    "name": "Marenco Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ8BC6T2X7S8",
+    "name": "Kestrel AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZN52A8PADD1",
+    "name": "Granmont NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZLL36YHA760",
+    "name": "Isarwerk 2.04% 2033",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZKWTQ0LF3M3",
+    "name": "Elbtal plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZEHHCUCKAH9",
+    "name": "Cedarline SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZC72BK8K7B1",
+    "name": "Cedarline Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZH2DHT0ZEU1",
+    "name": "Juniper Dividend Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ3EWB65JMP7",
+    "name": "Marenco AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2A7T5H27N1",
+    "name": "Juniper 5.69% 2035",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDFDNSU9S21",
+    "name": "Pellucid 4.77% 2029",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZA9SWE2X2G3",
+    "name": "Pellucid Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZHTSS30WF76",
+    "name": "Fjordvik 2.44% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZWF8M2S5526",
+    "name": "Isarwerk Dividend Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZK34P8VQN04",
+    "name": "Fjordvik SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZF0X6KV9JC1",
+    "name": "Dunmore SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZPWM9CXTJ18",
+    "name": "Cedarline 5.93% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZBQPQZWJC02",
+    "name": "Oakridge SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZA10YM4B718",
+    "name": "Kestrel 5.79% 2030",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ72DM3U6LF0",
+    "name": "Ysselstein SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ0YT701F1Q4",
+    "name": "Ysselstein 6.03% 2034",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZX5TBG56416",
+    "name": "Brueckweg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZN6DULC1WP6",
+    "name": "Valtamo AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZJ2AFKBTS90",
+    "name": "Juniper 1.96% 2028",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ0T1PEXVCF4",
+    "name": "Kestrel NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2V420B9QT3",
+    "name": "Oakridge AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ9UDAEZKJV8",
+    "name": "Ulmenhof 2.21% 2032",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ1AY9MXK4G4",
+    "name": "Solano 1.71% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2SZ5VX67T0",
+    "name": "Isarwerk AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ5B12T7CR22",
+    "name": "Ulmenhof 4.48% 2033",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZJUHXU8S9E3",
+    "name": "Lumenstein 1.75% 2033",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ104U20R3E1",
+    "name": "Tamberg AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZK6N0ER2G50",
+    "name": "Pellucid NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYFP5P3NPG1",
+    "name": "Pellucid AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZUDFUXY9AJ5",
+    "name": "Zinnober NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZD2VC583HY0",
+    "name": "Solano Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZDMBQKB99H2",
+    "name": "Valtamo SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZABHZPENPD8",
+    "name": "Westmark NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZB30WZ72S50",
+    "name": "Pellucid 4.03% 2031",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ4WU7V7YF18",
+    "name": "Marenco 2.91% 2032",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZCV5PNLB222",
+    "name": "Ulmenhof SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZMEXFY0UK54",
+    "name": "Juniper Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ96MGDBREQ9",
+    "name": "Tamberg NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ09EQW39NS3",
+    "name": "Solano 1.10% 2030",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ32LMMWETG8",
+    "name": "Dunmore AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZSX5N8QSJJ1",
+    "name": "Granmont AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZVB0MV7XZC8",
+    "name": "Kestrel 2.18% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZTDLCR501V2",
+    "name": "Fjordvik SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZBS1KPCXG13",
+    "name": "Dunmore 3.19% 2033",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ42B7W6YD44",
+    "name": "Tamberg 2.12% 2033",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZE2V966HT11",
+    "name": "Westmark AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ5BPR1529Y0",
+    "name": "Tamberg 3.95% 2027",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZXX04Q12ME1",
+    "name": "Brueckweg Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZCFDG3S3417",
+    "name": "Cedarline Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZYRL4LX8HF7",
+    "name": "Harbourline 1.67% 2035",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ6MDAWAJF70",
+    "name": "Zinnober NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZCR4GX9JHF2",
+    "name": "Elbtal SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZMXN7123MM0",
+    "name": "Westmark Euro Fund R",
+    "type": "FUND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZL5V0XBY7F8",
+    "name": "Zinnober SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZN6QZ2SFLB5",
+    "name": "Zinnober Euro Fund I",
+    "type": "FUND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ7PEFH4T9K5",
+    "name": "Harbourline 2.57% 2027",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZTNAJL0V9K0",
+    "name": "Brueckweg Dividend Fund R",
+    "type": "FUND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZTBMN6BR576",
+    "name": "Ysselstein Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ6AN68509S7",
+    "name": "Granmont Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ65RWL6NC67",
+    "name": "Oakridge plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZCBQ89BTGZ0",
+    "name": "Harbourline Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZLBQX6C1AE9",
+    "name": "Solano SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ9M0TRLGP72",
+    "name": "Ysselstein AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZT1ANUQMRQ8",
+    "name": "Zinnober Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ0HVV9JPHT0",
+    "name": "Brueckweg plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZH3HWV8PKA6",
+    "name": "Harbourline 3.45% 2030",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZSFR2CD2YU5",
+    "name": "Marenco AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZJDVYRH3CQ9",
+    "name": "Fjordvik AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZPM2VS2E5T5",
+    "name": "Fjordvik NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZWVRAW40BC3",
+    "name": "Ysselstein Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZXZRE8QFLD6",
+    "name": "Granmont Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ9VDKETF6L4",
+    "name": "Juniper AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZU3RE9MZ2C5",
+    "name": "Brueckweg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZND0K0JGJX0",
+    "name": "Oakridge SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1BDSSHVQ29",
+    "name": "Ulmenhof SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZHFLGJSSV72",
+    "name": "Isarwerk 3.32% 2031",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZPW9QT4KQZ1",
+    "name": "Nordhalle SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZNJ063B4MK9",
+    "name": "Solano Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZQRHFKGSYN8",
+    "name": "Ulmenhof 6.34% 2032",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZBQZG3TRC54",
+    "name": "Nordhalle 6.33% 2029",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ2M38GUUW02",
+    "name": "Zinnober SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ5VHF34HJY6",
+    "name": "Granmont 2.04% 2028",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZAK6354NH88",
+    "name": "Dunmore SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZE4PM8SC706",
+    "name": "Lumenstein 1.74% 2036",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ05K3MHASN3",
+    "name": "Nordhalle 1.97% 2032",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZKUFRLRK5Z5",
+    "name": "Granmont SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZTLUXTQG5R6",
+    "name": "Westmark 4.70% 2027",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZEK8M82QT05",
+    "name": "Granmont NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZRD5PBVAPD9",
+    "name": "Rheinfeld SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ34H7PZPQ74",
+    "name": "Valtamo AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2J7ASUR3F8",
+    "name": "Isarwerk AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ3NFD30XZN1",
+    "name": "Alpenrand SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZR5AR5D9JF7",
+    "name": "Juniper NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ980JH4G4J5",
+    "name": "Ulmenhof Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZCZ3V3HY406",
+    "name": "Harbourline SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZ3SVZ78NE2",
+    "name": "Zinnober 2.56% 2034",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ1E4FJXXML7",
+    "name": "Cedarline SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZLKP3RDC9T0",
+    "name": "Rheinfeld Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZAQ0XR3GTT4",
+    "name": "Tamberg SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZAZ6Y4HE35",
+    "name": "Marenco Dividend Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2EEU5L1647",
+    "name": "Valtamo SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ92M3SL9749",
+    "name": "Oakridge Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZCM8V06AQF5",
+    "name": "Nordhalle 6.16% 2035",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1F2H8E95P4",
+    "name": "Rheinfeld Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZENE90BG497",
+    "name": "Westmark Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ0UT9M5CGB6",
+    "name": "Alpenrand SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDJ78RPH591",
+    "name": "Solano AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZD3K3QN0LF9",
+    "name": "Alpenrand SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZL28JU6SC87",
+    "name": "Quayside SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZTJ7CT1F7P7",
+    "name": "Quayside Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZKRQYSPW7N1",
+    "name": "Ysselstein plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZXZ32RWZ731",
+    "name": "Granmont 2.55% 2028",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYE49LJGTS1",
+    "name": "Ysselstein Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZNX6J6TQHE4",
+    "name": "Harbourline 2.23% 2033",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZULSDPA6C54",
+    "name": "Nordhalle SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZGT4C63SB65",
+    "name": "Ulmenhof Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ3WYDZRS9F1",
+    "name": "Ulmenhof 3.41% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZUTCN5ZQ0S0",
+    "name": "Valtamo AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZCR6R1TDZV4",
+    "name": "Harbourline Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZGE7GS49W72",
+    "name": "Dunmore AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZU159D96WB7",
+    "name": "Cedarline Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZP3VU20U2S0",
+    "name": "Juniper 3.72% 2034",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZVLAZAYRF03",
+    "name": "Granmont Dividend Fund R",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYBSLRVUC26",
+    "name": "Westmark 4.98% 2028",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZD1RYJATT87",
+    "name": "Harbourline AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ51FZ7WN271",
+    "name": "Elbtal 1.22% 2035",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZFY72CFGLA2",
+    "name": "Rheinfeld Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZBAW3TAJER1",
+    "name": "Granmont 3.09% 2031",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZC50WNKGJ47",
+    "name": "Tamberg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZAWWT50VPS4",
+    "name": "Alpenrand SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZC341B7RHT3",
+    "name": "Oakridge Short Duration Fund A",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZV29ZT47BL5",
+    "name": "Lumenstein 2.14% 2034",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ86LYTAY1Q8",
+    "name": "Lumenstein 2.79% 2027",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1ZSDRH2N20",
+    "name": "Granmont 2.61% 2031",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ8DYR8D0LP6",
+    "name": "Pellucid 4.42% 2035",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZLP4NRG82V0",
+    "name": "Dunmore 4.22% 2027",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZPKJGHU18L2",
+    "name": "Solano AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZQ5K88F3521",
+    "name": "Pellucid NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ74UKJURRJ5",
+    "name": "Westmark SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZT6R8N7W8N9",
+    "name": "Solano SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ3FDTTVN6N6",
+    "name": "Nordhalle SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZEH2ZX85Y29",
+    "name": "Marenco AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2H9DJ99JK5",
+    "name": "Brueckweg SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZWZF29U9X15",
+    "name": "Marenco Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZHGRJCVLCX7",
+    "name": "Isarwerk Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZV3Y743FJ16",
+    "name": "Isarwerk plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZMHAS1NSJJ0",
+    "name": "Marenco AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZT59JQQQDT4",
+    "name": "Tamberg 4.59% 2031",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZUSC4TT9L85",
+    "name": "Solano NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZGU6KHMV952",
+    "name": "Pellucid 1.80% 2027",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ20TZB74EJ8",
+    "name": "Isarwerk Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ49KH8YL8E2",
+    "name": "Cedarline NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ3YBJJKLXK1",
+    "name": "Westmark AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZL8U84ZYQX8",
+    "name": "Rheinfeld 1.14% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ5RF09SJMV9",
+    "name": "Tamberg 5.95% 2032",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZBRL9CCNWP2",
+    "name": "Zinnober Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ86RJGZAQE1",
+    "name": "Fjordvik 2.54% 2032",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ6TEC805C29",
+    "name": "Marenco 1.28% 2036",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ2SJC97TVU7",
+    "name": "Westmark 3.68% 2032",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYUS1JMCT53",
+    "name": "Nordhalle SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZLGEABF16S6",
+    "name": "Isarwerk plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ0ARKBGWZZ6",
+    "name": "Oakridge 4.02% 2028",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZEJGXWZ15V2",
+    "name": "Dunmore AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZKLNW9JXP94",
+    "name": "Brueckweg SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZC96Y80KHF6",
+    "name": "Zinnober SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZHV21PZUB65",
+    "name": "Ulmenhof SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ23BB1B4EM1",
+    "name": "Kestrel Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZXN4CJLPXQ8",
+    "name": "Harbourline SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZEDYVXCSE09",
+    "name": "Juniper NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ6738TMS7K6",
+    "name": "Cedarline AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYDFASK2GM4",
+    "name": "Dunmore NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZJK6RGSA07",
+    "name": "Pellucid NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZJ2EE1SPGY9",
+    "name": "Kestrel plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZG1TYR8PGP6",
+    "name": "Zinnober Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ6XU2U9J2Y9",
+    "name": "Solano 4.67% 2028",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZNW6DS5DM16",
+    "name": "Marenco 2.58% 2028",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZFDS82VWGA5",
+    "name": "Solano Global Fund A",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZL1WLK97QK7",
+    "name": "Elbtal SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDV745R17B0",
+    "name": "Marenco Global Fund A",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZE690R7DPX3",
+    "name": "Elbtal AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZPUYXNRG5M1",
+    "name": "Zinnober Short Duration Fund A",
+    "type": "FUND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZTRZ7LPK2C6",
+    "name": "Kestrel SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ1H4HASB1T7",
+    "name": "Ulmenhof 6.48% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ7XSENA05D9",
+    "name": "Kestrel 2.74% 2027",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYVBA9YWE41",
+    "name": "Zinnober NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ8DW201SVQ6",
+    "name": "Fjordvik 5.62% 2036",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZTYH2QZKSU9",
+    "name": "Brueckweg Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZD7X6TRJFU3",
+    "name": "Rheinfeld plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZY9KSD4TWA4",
+    "name": "Lumenstein 2.98% 2030",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZLVZ323LSW1",
+    "name": "Zinnober 4.87% 2036",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZW2ZTULMGT3",
+    "name": "Juniper 5.86% 2030",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZGY4KB7Z7B1",
+    "name": "Elbtal plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZSTJRCTXRN5",
+    "name": "Harbourline Short Duration Fund R",
+    "type": "FUND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZ9C98NGZ5Q0",
+    "name": "Kestrel 3.66% 2034",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZLB3ZXDWAU3",
+    "name": "Brueckweg AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZUQSHMVTC76",
+    "name": "Granmont Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZZXAFMLJZP9",
+    "name": "Zinnober SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZFHQEFZHDS2",
+    "name": "Brueckweg 1.58% 2029",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZSDEY9M9L06",
+    "name": "Lumenstein Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZMQDW3FPZ49",
+    "name": "Rheinfeld 2.80% 2029",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZPVF02XHYY1",
+    "name": "Dunmore Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZVH9U7HRB75",
+    "name": "Lumenstein SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZDRP9YWFDV2",
+    "name": "Granmont Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZP8FZF9XPP2",
+    "name": "Oakridge Balanced Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZC0WCNFDHG5",
+    "name": "Alpenrand Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZCZBGKGLVQ6",
+    "name": "Nordhalle 3.88% 2031",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZMCC4ERDSL0",
+    "name": "Granmont plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZDX5PT9ZLK0",
+    "name": "Isarwerk NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYBARLMZ113",
+    "name": "Granmont 5.01% 2027",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZKKZE4XED01",
+    "name": "Zinnober 6.14% 2035",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZSNRF8U5KU6",
+    "name": "Alpenrand AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ49AA3AB858",
+    "name": "Harbourline 3.16% 2036",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZRG3597V9P3",
+    "name": "Marenco NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZVK3MN9H5E9",
+    "name": "Brueckweg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZHWLBRR29E8",
+    "name": "Rheinfeld AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ8K8L8Y38X9",
+    "name": "Fjordvik SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZYURD9EC50",
+    "name": "Dunmore SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZY2693N35Y8",
+    "name": "Fjordvik 4.02% 2034",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ8HSR3MXT08",
+    "name": "Juniper plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZGB736VHME0",
+    "name": "Nordhalle Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ3KD4VYTQ82",
+    "name": "Cedarline 6.49% 2033",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZ6QHY79QGX9",
+    "name": "Juniper 1.14% 2033",
+    "type": "BOND",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZRGWYQW9AA2",
+    "name": "Zinnober Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ051457BGA4",
+    "name": "Harbourline 5.01% 2034",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZVR0QJ34ED8",
+    "name": "Quayside 3.28% 2036",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZQPEY3JZW50",
+    "name": "Nordhalle 5.58% 2032",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ9GANR6V8F7",
+    "name": "Brueckweg 4.54% 2034",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ49RXRSBU33",
+    "name": "Solano Corp",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZQPGVLSXS97",
+    "name": "Rheinfeld Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZY2RVNFY0J7",
+    "name": "Nordhalle SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ06WNSWW5T7",
+    "name": "Alpenrand Global Fund A",
+    "type": "FUND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZV4Q0UMU8L9",
+    "name": "Elbtal 4.89% 2033",
+    "type": "BOND",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZENHW1YR800",
+    "name": "Nordhalle 3.87% 2028",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZT45P4M5ZM2",
+    "name": "Kestrel SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZCMHMNU3M41",
+    "name": "Westmark Inc",
+    "type": "EQUITY",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZZ5ZFPWY8Y0",
+    "name": "Tamberg AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZFNEU47ZML7",
+    "name": "Tamberg NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZA5802K9SE4",
+    "name": "Elbtal 5.84% 2032",
+    "type": "BOND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ8CA9FGBRZ9",
+    "name": "Juniper SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZNF6N0YWG3",
+    "name": "Isarwerk AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ36VNJALW97",
+    "name": "Marenco AG",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZXLB782RMF9",
+    "name": "Solano SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZME35Z8NWE3",
+    "name": "Westmark NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ35KE1JD5H3",
+    "name": "Fjordvik Holding AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZRGDX5K7X97",
+    "name": "Alpenrand NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZN2ZYKQ7DF3",
+    "name": "Kestrel Euro Fund I",
+    "type": "FUND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ8D9CCEBAM1",
+    "name": "Nordhalle AG",
+    "type": "EQUITY",
+    "currency": "CHF"
+  },
+  {
+    "isin": "ZZNXV0WYRDQ8",
+    "name": "Valtamo NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZU1L7T38AC1",
+    "name": "Marenco SE",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZD6T0H9P9Y2",
+    "name": "Lumenstein NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZZ0M5EZDZD0",
+    "name": "Tamberg SpA",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZYC7Q2KF266",
+    "name": "Solano Group plc",
+    "type": "EQUITY",
+    "currency": "GBP"
+  },
+  {
+    "isin": "ZZT8JA5255J2",
+    "name": "Cedarline NV",
+    "type": "EQUITY",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZSNXXB8WN92",
+    "name": "Valtamo 5.53% 2035",
+    "type": "BOND",
+    "currency": "USD"
+  },
+  {
+    "isin": "ZZ06JMHVUZ51",
+    "name": "Alpenrand Global Fund I",
+    "type": "FUND",
+    "currency": "EUR"
+  },
+  {
+    "isin": "ZZ14S2F16WH7",
+    "name": "Nordhalle Short Duration Fund A",
+    "type": "FUND",
+    "currency": "EUR"
+  }
+]

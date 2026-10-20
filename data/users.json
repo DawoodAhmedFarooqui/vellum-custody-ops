@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "email": "anna.keller@vellum.example",
+    "name": "Anna Keller",
+    "role": "ADMIN"
+  },
+  {
+    "id": 2,
+    "email": "tobias.brandt@vellum.example",
+    "name": "Tobias Brandt",
+    "role": "OPERATOR"
+  },
+  {
+    "id": 3,
+    "email": "lea.fischer@vellum.example",
+    "name": "Lea Fischer",
+    "role": "OPERATOR"
+  },
+  {
+    "id": 4,
+    "email": "marco.rossi@vellum.example",
+    "name": "Marco Rossi",
+    "role": "OPERATOR"
+  },
+  {
+    "id": 5,
+    "email": "julia.wagner@vellum.example",
+    "name": "Julia Wagner",
+    "role": "VIEWER"
+  },
+  {
+    "id": 6,
+    "email": "samir.haddad@vellum.example",
+    "name": "Samir Haddad",
+    "role": "VIEWER"
+  }
+]

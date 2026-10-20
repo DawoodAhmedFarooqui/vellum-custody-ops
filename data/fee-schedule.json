@@ -1,0 +1,29 @@
+{
+  "billingCurrency": "EUR",
+  "transactionFees": {
+    "BUY": {
+      "kind": "PERCENT_OF_GROSS",
+      "rate": "0.0010",
+      "minimum": "15.00",
+      "maximum": "250.00"
+    },
+    "SELL": {
+      "kind": "PERCENT_OF_GROSS",
+      "rate": "0.0010",
+      "minimum": "15.00",
+      "maximum": "250.00"
+    },
+    "TRANSFER_IN": {
+      "kind": "FLAT",
+      "amount": "25.00"
+    },
+    "TRANSFER_OUT": {
+      "kind": "FLAT",
+      "amount": "25.00"
+    }
+  },
+  "monthlyAccountFee": {
+    "RETAIL": "9.90",
+    "INSTITUTIONAL": "450.00"
+  }
+}

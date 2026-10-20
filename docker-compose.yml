@@ -1,0 +1,53 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: home-assignment-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uapp", "-papp"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  # API. Creates the schema and loads data/ on first start (skipped when already loaded).
+  server:
+    build: ./server
+    container_name: home-assignment-server
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: app
+      DB_PASSWORD: app
+      DB_NAME: app_db
+      DATA_DIR: /data
+      JWT_SECRET: ${JWT_SECRET:-local-compose-secret-change-for-real-deployments}
+    volumes:
+      - ./data:/data:ro
+    ports:
+      - "4000:4000"
+
+  # React app served by nginx, which proxies /api to the server.
+  web:
+    build: ./client
+    container_name: home-assignment-web
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "8080:80"
+
+volumes:
+  mysql_data:
